@@ -35,11 +35,6 @@ def binarySearch(arr, number, left=0, right=None):
     else:
         return "Not Found"
 
-arr = [i for i in range(0, 101)]
-arr.sort() 
 
-result = binarySearch(arr, 42, 0, len(arr) - 1)
-if result != "Not Found":
-    print(f"Found 42 at index {result}")
-else:
-    print("Not Found")
+arr = [0, 0, 0, 0, 1, 1, 1]
+print(binarySearch(arr,1))
